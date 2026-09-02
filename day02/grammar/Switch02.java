@@ -1,0 +1,27 @@
+package grammar;
+
+import java.util.Scanner;
+
+public class Switch02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("문자열 입력: ");
+        String str = sc.nextLine();
+        
+        switch(str) {
+        case "A", "B":
+        	System.out.println(">> 아주 열심히 하셨군요~~~!!");
+        	break;
+        case "C":
+        	System.out.println(">> 조금 더 노력이 필요합니다.");
+        	break;
+        case "D":
+        	System.out.println(">> 교수실로 찾아오세요");
+        	break;
+        }
+	}
+
+}
