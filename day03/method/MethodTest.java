@@ -11,10 +11,10 @@ public class MethodTest {
 		System.out.println("getIndex의 결과값 = " + getIndex(numArr, 2));
 		System.out.println("getMax의 결과값 = " + getMax(numArr));
 		System.out.println("getMin의 결과값 = " + getMin(numArr));
-		System.out.println("count의 결과값 = " + count(numArr, 5));
+		System.out.println("getCount의 결과값 = " + getCount(numArr, 5));
 		System.out.println("getSum의 결과값 = " + getSum(numArr));
 		System.out.println(Arrays.toString(numArr));
-		swap(numArr);
+		swapArray(numArr);
 		System.out.println(Arrays.toString(numArr));
 	}
 	
@@ -52,7 +52,7 @@ public class MethodTest {
 		return min;
 	}
 	
-	public static int count(int[] numArr, int N) {
+	public static int getCount(int[] numArr, int N) {
 		int sum = 0;
 		
 		for (int i = 0; i < numArr.length; i++) {
@@ -73,7 +73,7 @@ public class MethodTest {
 		return -1;
 	}
 	
-	public static void swap(int[] numArr) {
+	public static void swapArray(int[] numArr) {
 		int temp;
 		
 		for (int i = 0; i < numArr.length/2; i++) {
